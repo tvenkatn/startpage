@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>selenity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="NPL1270018 (modified by Raxgahrax (modified by SpurgeLaurels)">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link type="text/css" rel="stylesheet" href="css/font.css">
+  <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="fonts/font-awesome/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="terminal-con">
+      <div class="terminal-row ext-top">
+        <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+      </div>
+      <div class="search-row">
+        <input id="search-field" type="text" name="search-field" placeholder=">> Search... " onkeypress="return search(event)" autofocus="true" />
+        <script type="text/javascript">
+function search(e) {
+  if (e.keyCode === 13) {
+    // Get's via jquery the search field 
+    var searchText = $("#search-field");
+    // Opens queried page in a new tab 
+    window.open("https://google.ca/search?q=" + searchText.val() + "&kp=1&kl=fr-fr&kh=1&kg=p&k5=1&kae=t&k1=-1&kaj=m", "_blank");
+    // Reset search field input 
+    searchText.val("");
+    return false;
+  }
+}
+        </script>
+      </div>
+      <div class="terminal-row">
+        <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+      </div>
+      <div class="terminal-row ext-btm">
+      </div>
+      
+      <div class="terminal-row">
+      </div>
+      <div class="terminal-innerCon">
+        <div class="favCon">
+          <div class="favCon-header">
+            <span>Social Media</span>
+          </div>
+          <div class="favCon-body">
+            <a href="https://www.messenger.com/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Messenger</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://mail.yahoo.com/d/folders/1" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Yahoo Mail</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.reddit.com/new/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Reddit</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.reddit.com/r/hardwaregore/new/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>/r/HardwareGore</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.reddit.com/r/france/new/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>/r/France</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.reddit.com/r/security/new/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>/r/Security</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="favCon">
+          <div class="favCon-header">
+            <span>Social Networks</span>
+          </div>
+          <div class="favCon-body">
+            <a href="https://www.facebook.com/?sk=h_chr" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Facebook</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://twitter.com/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Twitter</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/dashboard?o=U" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>YouTube</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/feed/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>LinkedIn</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="favCon">
+          <div class="favCon-header">
+            <span>Gaming/D.L.</span>
+          </div>
+          <div class="favCon-body">
+            <a href="https://www.nexusmods.com/fallout3/mods/latest/?nav=1&page_size=15" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Nexus - Fallout 3</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.nexusmods.com/fallout4/mods/latest/?nav=1&page_size=15" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Nexus - Fallout 4</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.skidrowreloaded.com/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Skidrow Reloaded</span>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.zone-telechargement.lol/" onfocus="if(this.blur)this.blur()" target="_blank">
+              <div class="favCon-el">
+                <div class="favCon-el-content">
+                  <span>Zone-Téléchargement</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><div class="terminal-row terminal-extend"></div>
+  </div>
+</body>
+
+</html>
